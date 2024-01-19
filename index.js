@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// const postRoute = require("./routes/post");
+const postRoute = require("./routes/post");
 
 const Port = 4000;
 
@@ -22,7 +22,7 @@ const connectToDB = () => {
 
 connectToDB();
 
-// app.use("/api/post", postRoute);
+app.use("/api/post", postRoute);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
