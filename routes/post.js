@@ -8,6 +8,6 @@ const {
 
 router.get('/all', getPosts);
 router.get('/one/:id', getOne);
-router.get('/search/', searchPosts);
+router.get('/search', searchPosts);
 
 module.exports = router;

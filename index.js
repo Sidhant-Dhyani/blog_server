@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const postRoute = require("./routes/post.js");
+const postRoute = require("./routes/post");
 
 const Port = 4000;
 

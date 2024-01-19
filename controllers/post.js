@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const PostsModel = require('../models/Post');
 const getPosts = async (req, res) => {
     try {
@@ -74,4 +73,3 @@ module.exports = { getPosts, getOne, searchPosts };
 // } else if (req.query.sort === "desc") {
 //     sort = { title: -1 }; // Sorting posts alphabetically by title in descending order
 // }
-
