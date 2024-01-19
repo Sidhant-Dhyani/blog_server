@@ -11,6 +11,7 @@ const postRoute = require("./routes/post");
 
 const Port = 4000;
 
+// Connecting to mongoDB. Using atlas uri string.
 const connectToDB = () => {
     try {
         mongoose.connect('mongodb+srv://sidhantdhyani99:sidhantdhyani@cluster0.4qmty.mongodb.net/blog');
